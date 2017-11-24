@@ -1,0 +1,429 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18313 ]
+[d frameptr 6 ]
+"62 /Applications/microchip/xc8/v1.43/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 /Applications/microchip/xc8/v1.43/sources/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"56 /Applications/microchip/xc8/v1.43/sources/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 /Applications/microchip/xc8/v1.43/sources/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"44 /Applications/microchip/xc8/v1.43/sources/common/fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"27 /Applications/microchip/xc8/v1.43/sources/common/lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"6 /Applications/microchip/xc8/v1.43/sources/pic/eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"70 /Users/andy/Desktop/light/18313_servo_pwm.X/main.c
+[v _main main `(v  1 e 1 0 ]
+"275
+[v _to_pwm to_pwm `(ui  1 e 2 0 ]
+"55 /Users/andy/Desktop/light/18313_servo_pwm.X/mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"77
+[v _EUSART_Read EUSART_Read `(uc  1 e 1 0 ]
+"76 /Users/andy/Desktop/light/18313_servo_pwm.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"90
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"104
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"51 /Users/andy/Desktop/light/18313_servo_pwm.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"63 /Users/andy/Desktop/light/18313_servo_pwm.X/mcc_generated_files/pwm1.c
+[v _PWM1_Initialize PWM1_Initialize `(v  1 e 1 0 ]
+"78
+[v _PWM1_LoadDutyValue PWM1_LoadDutyValue `(v  1 e 1 0 ]
+"63 /Users/andy/Desktop/light/18313_servo_pwm.X/mcc_generated_files/pwm2.c
+[v _PWM2_Initialize PWM2_Initialize `(v  1 e 1 0 ]
+"78
+[v _PWM2_LoadDutyValue PWM2_LoadDutyValue `(v  1 e 1 0 ]
+"57 /Users/andy/Desktop/light/18313_servo_pwm.X/mcc_generated_files/pwm5.c
+[v _PWM5_Initialize PWM5_Initialize `(v  1 e 1 0 ]
+"71
+[v _PWM5_LoadDutyValue PWM5_LoadDutyValue `(v  1 e 1 0 ]
+"57 /Users/andy/Desktop/light/18313_servo_pwm.X/mcc_generated_files/pwm6.c
+[v _PWM6_Initialize PWM6_Initialize `(v  1 e 1 0 ]
+"71
+[v _PWM6_LoadDutyValue PWM6_LoadDutyValue `(v  1 e 1 0 ]
+"63 /Users/andy/Desktop/light/18313_servo_pwm.X/mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"83
+[v _TMR2_StartTimer TMR2_StartTimer `(v  1 e 1 0 ]
+[s S111 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 BCL1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"482 /Applications/microchip/xc8/v1.43/include/pic16f18313.h
+[u S120 . 1 `S111 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES120  1 e 1 @17 ]
+"1355
+[v _TMR2 TMR2 `VEuc  1 e 1 @29 ]
+"1375
+[v _PR2 PR2 `VEuc  1 e 1 @30 ]
+"1395
+[v _T2CON T2CON `VEuc  1 e 1 @31 ]
+[s S136 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 T2OUTPS 1 0 :4:3 
+]
+"1416
+[s S140 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+[u S148 . 1 `S136 1 . 1 0 `S140 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES148  1 e 1 @31 ]
+"1466
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1711
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"2021
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"2425
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2491
+[v _RC1REG RC1REG `VEuc  1 e 1 @409 ]
+"2545
+[v _TX1REG TX1REG `VEuc  1 e 1 @410 ]
+"2606
+[v _SP1BRGL SP1BRGL `VEuc  1 e 1 @411 ]
+"2676
+[v _SP1BRGH SP1BRGH `VEuc  1 e 1 @412 ]
+"2730
+[v _RC1STA RC1STA `VEuc  1 e 1 @413 ]
+[s S362 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"2756
+[u S371 . 1 `S362 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES371  1 e 1 @413 ]
+"2910
+[v _TX1STA TX1STA `VEuc  1 e 1 @414 ]
+"3090
+[v _BAUD1CON BAUD1CON `VEuc  1 e 1 @415 ]
+"3336
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"4784
+[v _ODCONA ODCONA `VEuc  1 e 1 @652 ]
+"4836
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @657 ]
+"4856
+[v _CCPR1H CCPR1H `VEuc  1 e 1 @658 ]
+"4876
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @659 ]
+[s S34 . 1 `uc 1 CCP1MODE 1 0 :4:0 
+`uc 1 CCP1FMT 1 0 :1:4 
+`uc 1 CCP1OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 CCP1EN 1 0 :1:7 
+]
+"4896
+[s S40 . 1 `uc 1 CCP1MODE0 1 0 :1:0 
+`uc 1 CCP1MODE1 1 0 :1:1 
+`uc 1 CCP1MODE2 1 0 :1:2 
+`uc 1 CCP1MODE3 1 0 :1:3 
+]
+[u S45 . 1 `S34 1 . 1 0 `S40 1 . 1 0 ]
+[v _CCP1CONbits CCP1CONbits `VES45  1 e 1 @659 ]
+"4988
+[v _CCPR2L CCPR2L `VEuc  1 e 1 @661 ]
+"5008
+[v _CCPR2H CCPR2H `VEuc  1 e 1 @662 ]
+"5028
+[v _CCP2CON CCP2CON `VEuc  1 e 1 @663 ]
+[s S72 . 1 `uc 1 CCP2MODE 1 0 :4:0 
+`uc 1 CCP2FMT 1 0 :1:4 
+`uc 1 CCP2OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 CCP2EN 1 0 :1:7 
+]
+"5048
+[s S78 . 1 `uc 1 CCP2MODE0 1 0 :1:0 
+`uc 1 CCP2MODE1 1 0 :1:1 
+`uc 1 CCP2MODE2 1 0 :1:2 
+`uc 1 CCP2MODE3 1 0 :1:3 
+]
+[u S83 . 1 `S72 1 . 1 0 `S78 1 . 1 0 ]
+[v _CCP2CONbits CCP2CONbits `VES83  1 e 1 @663 ]
+"5852
+[v _PWM5DCL PWM5DCL `VEuc  1 e 1 @1559 ]
+"5888
+[v _PWM5DCH PWM5DCH `VEuc  1 e 1 @1560 ]
+"5958
+[v _PWM5CON PWM5CON `VEuc  1 e 1 @1561 ]
+"6024
+[v _PWM6DCL PWM6DCL `VEuc  1 e 1 @1562 ]
+"6060
+[v _PWM6DCH PWM6DCH `VEuc  1 e 1 @1563 ]
+"6130
+[v _PWM6CON PWM6CON `VEuc  1 e 1 @1564 ]
+"9072
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2329 ]
+"9212
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @2331 ]
+"9309
+[v _OSCEN OSCEN `VEuc  1 e 1 @2333 ]
+"9355
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2334 ]
+"9413
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2335 ]
+"9459
+[v _PPSLOCK PPSLOCK `VEuc  1 e 1 @3599 ]
+[s S229 . 1 `uc 1 PPSLOCKED 1 0 :1:0 
+]
+"9469
+[u S231 . 1 `S229 1 . 1 0 ]
+[v _PPSLOCKbits PPSLOCKbits `VES231  1 e 1 @3599 ]
+[s S256 . 1 `uc 1 RXPPS 1 0 :5:0 
+]
+"10172
+[s S258 . 1 `uc 1 RXPPS0 1 0 :1:0 
+`uc 1 RXPPS1 1 0 :1:1 
+`uc 1 RXPPS2 1 0 :1:2 
+`uc 1 RXPPS3 1 0 :1:3 
+`uc 1 RXPPS4 1 0 :1:4 
+]
+[u S264 . 1 `S256 1 . 1 0 `S258 1 . 1 0 ]
+[v _RXPPSbits RXPPSbits `VES264  1 e 1 @3620 ]
+[s S276 . 1 `uc 1 RA0PPS 1 0 :5:0 
+]
+"10484
+[s S278 . 1 `uc 1 RA0PPS0 1 0 :1:0 
+`uc 1 RA0PPS1 1 0 :1:1 
+`uc 1 RA0PPS2 1 0 :1:2 
+`uc 1 RA0PPS3 1 0 :1:3 
+`uc 1 RA0PPS4 1 0 :1:4 
+]
+[u S284 . 1 `S276 1 . 1 0 `S278 1 . 1 0 ]
+[v _RA0PPSbits RA0PPSbits `VES284  1 e 1 @3728 ]
+[s S236 . 1 `uc 1 RA1PPS 1 0 :5:0 
+]
+"10536
+[s S238 . 1 `uc 1 RA1PPS0 1 0 :1:0 
+`uc 1 RA1PPS1 1 0 :1:1 
+`uc 1 RA1PPS2 1 0 :1:2 
+`uc 1 RA1PPS3 1 0 :1:3 
+`uc 1 RA1PPS4 1 0 :1:4 
+]
+[u S244 . 1 `S236 1 . 1 0 `S238 1 . 1 0 ]
+[v _RA1PPSbits RA1PPSbits `VES244  1 e 1 @3729 ]
+[s S296 . 1 `uc 1 RA2PPS 1 0 :5:0 
+]
+"10588
+[s S298 . 1 `uc 1 RA2PPS0 1 0 :1:0 
+`uc 1 RA2PPS1 1 0 :1:1 
+`uc 1 RA2PPS2 1 0 :1:2 
+`uc 1 RA2PPS3 1 0 :1:3 
+`uc 1 RA2PPS4 1 0 :1:4 
+]
+[u S304 . 1 `S296 1 . 1 0 `S298 1 . 1 0 ]
+[v _RA2PPSbits RA2PPSbits `VES304  1 e 1 @3730 ]
+[s S316 . 1 `uc 1 RA5PPS 1 0 :5:0 
+]
+"10692
+[s S318 . 1 `uc 1 RA5PPS0 1 0 :1:0 
+`uc 1 RA5PPS1 1 0 :1:1 
+`uc 1 RA5PPS2 1 0 :1:2 
+`uc 1 RA5PPS3 1 0 :1:3 
+`uc 1 RA5PPS4 1 0 :1:4 
+]
+[u S324 . 1 `S316 1 . 1 0 `S318 1 . 1 0 ]
+[v _RA5PPSbits RA5PPSbits `VES324  1 e 1 @3733 ]
+"13604
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"70 /Users/andy/Desktop/light/18313_servo_pwm.X/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"72
+[v main@i i `i  1 a 2 70 ]
+"73
+[v main@v4 v4 `uc  1 a 1 75 ]
+[v main@v3 v3 `uc  1 a 1 74 ]
+[v main@v2 v2 `uc  1 a 1 73 ]
+[v main@v1 v1 `uc  1 a 1 72 ]
+"257
+} 0
+"275
+[v _to_pwm to_pwm `(ui  1 e 2 0 ]
+{
+[v to_pwm@angle angle `uc  1 a 1 wreg ]
+[v to_pwm@angle angle `uc  1 a 1 wreg ]
+[v to_pwm@angle angle `uc  1 a 1 12 ]
+"277
+} 0
+"27 /Applications/microchip/xc8/v1.43/sources/common/lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+{
+[v ___lbtoft@c c `uc  1 a 1 wreg ]
+[v ___lbtoft@c c `uc  1 a 1 wreg ]
+"29
+[v ___lbtoft@c c `uc  1 a 1 11 ]
+"30
+} 0
+"44 /Applications/microchip/xc8/v1.43/sources/common/fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 58 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 62 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 57 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 49 ]
+"73
+} 0
+"62 /Applications/microchip/xc8/v1.43/sources/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 31 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 35 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 34 ]
+[v ___ftmul@exp exp `uc  1 a 1 30 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 20 ]
+[v ___ftmul@f2 f2 `f  1 p 3 23 ]
+"157
+} 0
+"56 /Applications/microchip/xc8/v1.43/sources/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"60
+[v ___ftdiv@f3 f3 `f  1 a 3 15 ]
+"59
+[v ___ftdiv@sign sign `uc  1 a 1 19 ]
+[v ___ftdiv@exp exp `uc  1 a 1 18 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 14 ]
+"56
+[v ___ftdiv@f2 f2 `f  1 p 3 4 ]
+[v ___ftdiv@f1 f1 `f  1 p 3 7 ]
+"86
+} 0
+"86 /Applications/microchip/xc8/v1.43/sources/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+{
+"88
+[v ___ftadd@exp1 exp1 `uc  1 a 1 48 ]
+[v ___ftadd@exp2 exp2 `uc  1 a 1 47 ]
+[v ___ftadd@sign sign `uc  1 a 1 46 ]
+"86
+[v ___ftadd@f1 f1 `f  1 p 3 36 ]
+[v ___ftadd@f2 f2 `f  1 p 3 39 ]
+"148
+} 0
+"62 /Applications/microchip/xc8/v1.43/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0
+"76 /Users/andy/Desktop/light/18313_servo_pwm.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"88
+} 0
+"104
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"108
+} 0
+"63 /Users/andy/Desktop/light/18313_servo_pwm.X/mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"81
+} 0
+"83
+[v _TMR2_StartTimer TMR2_StartTimer `(v  1 e 1 0 ]
+{
+"87
+} 0
+"57 /Users/andy/Desktop/light/18313_servo_pwm.X/mcc_generated_files/pwm6.c
+[v _PWM6_Initialize PWM6_Initialize `(v  1 e 1 0 ]
+{
+"69
+} 0
+"57 /Users/andy/Desktop/light/18313_servo_pwm.X/mcc_generated_files/pwm5.c
+[v _PWM5_Initialize PWM5_Initialize `(v  1 e 1 0 ]
+{
+"69
+} 0
+"63 /Users/andy/Desktop/light/18313_servo_pwm.X/mcc_generated_files/pwm2.c
+[v _PWM2_Initialize PWM2_Initialize `(v  1 e 1 0 ]
+{
+"76
+} 0
+"63 /Users/andy/Desktop/light/18313_servo_pwm.X/mcc_generated_files/pwm1.c
+[v _PWM1_Initialize PWM1_Initialize `(v  1 e 1 0 ]
+{
+"76
+} 0
+"51 /Users/andy/Desktop/light/18313_servo_pwm.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"83
+[v PIN_MANAGER_Initialize@state state `uc  1 a 1 0 ]
+"100
+} 0
+"90 /Users/andy/Desktop/light/18313_servo_pwm.X/mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"102
+} 0
+"55 /Users/andy/Desktop/light/18313_servo_pwm.X/mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+{
+"74
+} 0
+"71 /Users/andy/Desktop/light/18313_servo_pwm.X/mcc_generated_files/pwm6.c
+[v _PWM6_LoadDutyValue PWM6_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM6_LoadDutyValue@dutyValue dutyValue `ui  1 p 2 66 ]
+"78
+} 0
+"71 /Users/andy/Desktop/light/18313_servo_pwm.X/mcc_generated_files/pwm5.c
+[v _PWM5_LoadDutyValue PWM5_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM5_LoadDutyValue@dutyValue dutyValue `ui  1 p 2 66 ]
+"78
+} 0
+"78 /Users/andy/Desktop/light/18313_servo_pwm.X/mcc_generated_files/pwm2.c
+[v _PWM2_LoadDutyValue PWM2_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM2_LoadDutyValue@dutyValue dutyValue `ui  1 p 2 66 ]
+"94
+} 0
+"78 /Users/andy/Desktop/light/18313_servo_pwm.X/mcc_generated_files/pwm1.c
+[v _PWM1_LoadDutyValue PWM1_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM1_LoadDutyValue@dutyValue dutyValue `ui  1 p 2 66 ]
+"94
+} 0
+"77 /Users/andy/Desktop/light/18313_servo_pwm.X/mcc_generated_files/eusart.c
+[v _EUSART_Read EUSART_Read `(uc  1 e 1 0 ]
+{
+"94
+} 0
